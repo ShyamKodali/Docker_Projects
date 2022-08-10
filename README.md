@@ -1,2 +1,2 @@
 # Docker_Projects
-All the Docker Projects are stored in this repo
+All the docker Projects are stored in this repo
