@@ -2,6 +2,6 @@
 
 #################################################
 
-All my docker Projects are stored in this repo
+All my docker example learning are stored in this repo
 
 ################################################# 
