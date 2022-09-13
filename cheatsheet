@@ -61,7 +61,7 @@ COMPOSE :-
 # Create more number of CONTAINERS and NETWORKS inside the docker compose
 
 -> docker-compose ps # Shows the containers present in that composed environment
--> docker-compose up -d
+-> docker-compose -p <project_name> up -d  # -p = pecify a project name; If no -p then it uses directory name 
 -> docker-compose down 
 -> docker-compose stop # Stopping containers 
 
