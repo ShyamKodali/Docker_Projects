@@ -65,9 +65,6 @@ COMPOSE :-
 -> docker-compose down 
 -> docker-compose stop # Stopping containers 
 
-
-
-
 OTHERS :- 
 
 -> docker network create <network_name> 
