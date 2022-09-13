@@ -1,0 +1,24 @@
+BUILD :- 
+
+-> docker build -f /path/to/a/Dockerfile
+-> docker build . 
+-> docker build -t <specifed_image_name> . 
+
+ex: 
+# Dockerfile
+# Dockerfile for base image of actInbox
+    FROM ksk/base
+
+# We need to build the base image first, then build <specifed_image_name:tag> 
+
+-> docker build -t ksk/base -f Dockerfile.base
+-> docker build -t <specifed_image_name:tag> -f Docker.<specifed_image_name:tag>
+
+IMAGES :- 
+
+-> docker images 
+-> docker pull <image-name:tags>
+-> docker push <image-name:tags>
+-> docker run -dit -p6000:3679 --name <choose_specific_name> <image-name>  # -it = Iteractive Terminal # -p = port binding # -d = to run in same Terminal
+-> docker exec -it <specifed_image_name>
+-> docker rmi image 
